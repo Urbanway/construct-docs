@@ -1,0 +1,987 @@
+<!DOCTYPE html><html lang="en">
+<head>
+                <meta charset="UTF-8" />
+    <title>Widgets</title>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="generator" content="Construct" />
+    <link href="../Plugin/CodeHighlight/assets/syntaxhighlighter/css/shCoreDefault.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/CodeHighlight/assets/shThemeConstruct.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/Colorbox/assets/theme2/colorbox.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/User/assets/user.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/HybridAuth/assets/hybridauth.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/Support/assets/notSubscribedView.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Theme/Construct/assets/docs.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Theme/Construct/assets/overrides.css@42.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <div class="navbar navbar-static-top navbar-inverse" style="z-index: 1001;">         <div class="wrapper">
+            <div class="col_12">
+                <a href="https://www.impresspages.org/" class="navbar-brand icon"></a>
+                                    <div class="search navbar-right">
+                        <a href="https://www.impresspages.org/search" class="toggle pull-right">&nbsp;</a>
+                    </div>
+                                <a class="btn btn-primary navbar-btn navbar-right" href="https://www.impresspages.org/download">Download</a>
+                                    <a class="btn btn-default navbar-btn navbar-right navbar-login" href="https://www.impresspages.org/login">Login</a>
+                
+                <ul class="level1 nav navbar-nav navbar-left">        <li>
+            <a href="https://market.impresspages.org" title="Market">
+                Market            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/blog2" title="Blog">
+                Blog            </a>
+                    </li>        <li class="crumb">
+            <a href="https://www.impresspages.org/docs" title="Docs">
+                Docs            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/community" title="Community">
+                Community            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/support" title="Support">
+                Support            </a>
+                    </li>        <li>
+            <a href="http://www.impresspages.org/about-us" title="About">
+                About            </a>
+                    </li></ul>
+            </div>
+        </div>
+    </div>
+            <div class="navbar  navbar-static-top navbar-default">
+            <div class="wrapper">
+                <div class="col_12">
+                    <ul class="level1 nav navbar-nav">        <li class="crumb">
+            <a href="thinking-in-impresspages.html" title="Manual">
+                Manual            </a>
+                    </li>        <li>
+            <a href="hello-world-plugin.html" title="Examples">
+                Examples            </a>
+                    </li>        <li>
+            <a href="cdn.html" title="Tips">
+                Tips            </a>
+                    </li>        <li>
+            <a href="installation.html" title="User manual">
+                User manual            </a>
+                    </li></ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="wrapper">
+    <div class="split col_lg_3 visible-md visible-lg"></div>
+    <div class="sidenav col_12 col_md_12 col_lg_3 pull-left">
+        <span class="sidenavHeader">Topics</span>
+        <nav class="collapsable ">
+                            <ul class="short level1">        <li>
+            <a href="thinking-in-impresspages.html" title="MUST READ">
+                Thinking in Construct            </a>
+                    </li>        <li>
+            <a href="controller.html" title="Controller">
+                Controller            </a>
+                    </li>        <li>
+            <a href="model.html" title="Model">
+                Model            </a>
+                    </li>        <li>
+            <a href="view.html" title="View (MVC)">
+                View            </a>
+                    </li>        <li>
+            <a href="routing.html" title="Routing">
+                Routing            </a>
+                    </li>        <li>
+            <a href="theme.html" title="Theme">
+                Theme            </a>
+                    </li>        <li class="active">
+            <a href="widgets.html" title="Widgets">
+                Widget            </a>
+                    </li>        <li>
+            <a href="layout.html" title="Layout">
+                Layout            </a>
+                    </li>        <li>
+            <a href="block.html" title="Blocks">
+                Block            </a>
+                    </li>        <li>
+            <a href="plugin.html" title="Plugins">
+                Plugin            </a>
+                    </li></ul>
+<ul class="extended level1">        <li>
+            <a href="admin-menu.html" title="Admin menu">
+                Admin menu            </a>
+                    </li>        <li>
+            <a href="application.html" title="Application">
+                Application            </a>
+                    </li>        <li>
+            <a href="autoloader.html" title="Autoloader">
+                Autoloader            </a>
+                    </li>        <li>
+            <a href="block.html" title="Blocks">
+                Block            </a>
+                    </li>        <li class="parent">
+            <a href="class-ip-application.html" title="Classes">
+                Classes            </a>
+            <ul class="level2 children">        <li>
+            <a href="class-ip-application.html" title="Application">
+                Application            </a>
+                    </li>        <li>
+            <a href="class-ip-block.html" title="Block">
+                Block            </a>
+                    </li>        <li>
+            <a href="class-ip-config.html" title="Config">
+                Config            </a>
+                    </li>        <li>
+            <a href="class-ip-content.html" title="Content">
+                Content            </a>
+                    </li>        <li>
+            <a href="class-ip-controller.html" title="Controller">
+                Controller            </a>
+                    </li>        <li>
+            <a href="class-ip-db.html" title="Db">
+                Db            </a>
+                    </li>        <li>
+            <a href="class-ip-dispatcher.html" title="Dispatcher">
+                Dispatcher            </a>
+                    </li>        <li>
+            <a href="class-ip-form.html" title="Form">
+                Form            </a>
+                    </li>        <li>
+            <a href="class-ip-form-field.html" title="Form/Field">
+                Form/Field            </a>
+                    </li>        <li>
+            <a href="class-ip-form-validator.html" title="Form/Validator">
+                Form/Validator            </a>
+                    </li>        <li>
+            <a href="class-ip-language.html" title="Language">
+                Language            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/menu-helper" title="Menu/Helper">
+                Menu/Helper            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/menu-item" title="Menu/Item">
+                Menu/Item            </a>
+                    </li>        <li>
+            <a href="class-ip-options.html" title="Options">
+                Options            </a>
+                    </li>        <li>
+            <a href="class-ip-page.html" title="Page">
+                Page            </a>
+                    </li>        <li>
+            <a href="class-ip-request.html" title="Request">
+                Request            </a>
+                    </li>        <li>
+            <a href="class-ip-response.html" title="Response">
+                Response            </a>
+                    </li>        <li>
+            <a href="response-json.html" title="Response/Json">
+                Response/Json            </a>
+                    </li>        <li>
+            <a href="response-layout.html" title="Response/Layout">
+                Response/Layout            </a>
+                    </li>        <li>
+            <a href="response-pagenotfound.html" title="Response/PageNotFound">
+                Response/PageNotFound            </a>
+                    </li>        <li>
+            <a href="response-redirect.html" title="Response/Redirect">
+                Response/Redirect            </a>
+                    </li>        <li>
+            <a href="class-ip-route.html" title="Route">
+                Route            </a>
+                    </li>        <li>
+            <a href="class-ip-storage.html" title="Storage">
+                Storage            </a>
+                    </li>        <li>
+            <a href="class-ip-user.html" title="User">
+                User            </a>
+                    </li>        <li>
+            <a href="class-ip-view.html" title="View">
+                View            </a>
+                    </li>        <li>
+            <a href="class-ip-widgetcontroller.html" title="WidgetController">
+                WidgetController            </a>
+                    </li></ul>
+        </li>        <li>
+            <a href="configuration.html" title="Configuration">
+                Configuration            </a>
+                    </li>        <li>
+            <a href="content.html" title="Content">
+                Content            </a>
+                    </li>        <li>
+            <a href="controller.html" title="Controller">
+                Controller            </a>
+                    </li>        <li>
+            <a href="cron.html" title="Cron">
+                Cron            </a>
+                    </li>        <li>
+            <a href="css.html" title="CSS and LESS">
+                CSS            </a>
+                    </li>        <li>
+            <a href="database.html" title="Database">
+                Database            </a>
+                    </li>        <li>
+            <a href="ecommerce.html" title="E-commerce">
+                Ecommerce            </a>
+                    </li>        <li>
+            <a href="email.html" title="Email">
+                Email            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/error404" title="Error404">
+                Error404            </a>
+                    </li>        <li>
+            <a href="escaping.html" title="Escaping">
+                Escaping            </a>
+                    </li>        <li>
+            <a href="event-list.html" title="Event list">
+                Event list            </a>
+                    </li>        <li>
+            <a href="events.html" title="Events">
+                Events            </a>
+                    </li>        <li>
+            <a href="filter-list.html" title="Filter list">
+                Filter list            </a>
+                    </li>        <li>
+            <a href="filters.html" title="Event filters">
+                Filters            </a>
+                    </li>        <li>
+            <a href="form.html" title="Forms">
+                Form            </a>
+                    </li>        <li>
+            <a href="form-validation-in-javascript.html" title="Form JavaScript and validation">
+                Form JavaScript and validation            </a>
+                    </li>        <li class="parent">
+            <a href="form-object.html" title="Form object">
+                Form object            </a>
+            <ul class="level2 children">        <li>
+            <a href="form-object/captcha.html" title="Captcha">
+                Captcha            </a>
+                    </li>        <li>
+            <a href="form-object/checkbox.html" title="Checkbox">
+                Checkbox            </a>
+                    </li>        <li>
+            <a href="form-object/email.html" title="Email">
+                Email            </a>
+                    </li>        <li>
+            <a href="form-object/file.html" title="File">
+                File            </a>
+                    </li>        <li>
+            <a href="form-object/info.html" title="Info">
+                Info            </a>
+                    </li>        <li>
+            <a href="form-object/radio.html" title="Radio">
+                Radio            </a>
+                    </li>        <li>
+            <a href="form-object/repositoryfile.html" title="RepositoryFile">
+                RepositoryFile            </a>
+                    </li>        <li>
+            <a href="form-object/select.html" title="Select">
+                Select            </a>
+                    </li>        <li>
+            <a href="form-object/submit.html" title="Submit">
+                Submit            </a>
+                    </li>        <li>
+            <a href="form-object/text.html" title="Text">
+                Text            </a>
+                    </li>        <li>
+            <a href="form-object/textarea.html" title="TextArea">
+                TextArea            </a>
+                    </li></ul>
+        </li>        <li>
+            <a href="form-validation-in-php.html" title="Form validation in PHP">
+                Form validation in PHP            </a>
+                    </li>        <li>
+            <a href="form-generation.html" title="Form: generating HTML">
+                Form: generating HTML            </a>
+                    </li>        <li>
+            <a href="date-time-currency.html" title="Format date, time, currency">
+                Format date, time, currency            </a>
+                    </li>        <li class="parent">
+            <a href="esc.html" title="Functions">
+                Functions            </a>
+            <ul class="level2 children">        <li>
+            <a href="functions.html" title="esc">
+                esc            </a>
+                    </li>        <li>
+            <a href="escattr.html" title="escAttr">
+                escAttr            </a>
+                    </li>        <li>
+            <a href="esctextarea.html" title="escTextarea">
+                escTextarea            </a>
+                    </li>        <li>
+            <a href="ipactionurl.html" title="ipActionUrl">
+                ipActionUrl            </a>
+                    </li>        <li>
+            <a href="ipaddcss.html" title="ipAddCss">
+                ipAddCss            </a>
+                    </li>        <li>
+            <a href="ipaddjs.html" title="ipAddJs">
+                ipAddJs            </a>
+                    </li>        <li>
+            <a href="ipaddjscontent.html" title="ipAddJsContent">
+                ipAddJsContent            </a>
+                    </li>        <li>
+            <a href="ipaddjsvariable.html" title="ipAddJsVariable">
+                ipAddJsVariable            </a>
+                    </li>        <li>
+            <a href="ipadminid.html" title="ipAdminId">
+                ipAdminId            </a>
+                    </li>        <li>
+            <a href="ipadminpermission.html" title="ipAdminPermission">
+                ipAdminPermission            </a>
+                    </li>        <li>
+            <a href="ipapplication.html" title="ipApplication">
+                ipApplication            </a>
+                    </li>        <li>
+            <a href="ipbindfile.html" title="ipBindFile">
+                ipBindFile            </a>
+                    </li>        <li>
+            <a href="ipblock.html" title="ipBlock">
+                ipBlock            </a>
+                    </li>        <li>
+            <a href="ipconfig.html" title="ipConfig">
+                ipConfig            </a>
+                    </li>        <li>
+            <a href="ipcontent.html" title="ipContent">
+                ipContent            </a>
+                    </li>        <li>
+            <a href="ipconvertcurrency.html" title="ipConvertCurrency">
+                ipConvertCurrency            </a>
+                    </li>        <li>
+            <a href="ipdb.html" title="ipDb">
+                ipDb            </a>
+                    </li>        <li>
+            <a href="ipdoctypedeclaration.html" title="ipDoctypeDeclaration">
+                ipDoctypeDeclaration            </a>
+                    </li>        <li>
+            <a href="ipemailtemplate.html" title="ipEmailTemplate">
+                ipEmailTemplate            </a>
+                    </li>        <li>
+            <a href="ipevent.html" title="ipEvent">
+                ipEvent            </a>
+                    </li>        <li>
+            <a href="ipfile.html" title="ipFile">
+                ipFile            </a>
+                    </li>        <li>
+            <a href="ipfileurl.html" title="ipFileUrl">
+                ipFileUrl            </a>
+                    </li>        <li>
+            <a href="ipfilter.html" title="ipFilter">
+                ipFilter            </a>
+                    </li>        <li>
+            <a href="ipformatbytes.html" title="ipFormatBytes">
+                ipFormatBytes            </a>
+                    </li>        <li>
+            <a href="ipformatdate.html" title="ipFormatDate">
+                ipFormatDate            </a>
+                    </li>        <li>
+            <a href="ipformatdatetime.html" title="ipFormatDateTime">
+                ipFormatDateTime            </a>
+                    </li>        <li>
+            <a href="ipformatprice.html" title="ipFormatPrice">
+                ipFormatPrice            </a>
+                    </li>        <li>
+            <a href="ipformattime.html" title="ipFormatTime">
+                ipFormatTime            </a>
+                    </li>        <li>
+            <a href="ipgetlayout.html" title="ipGetLayout">
+                ipGetLayout            </a>
+                    </li>        <li>
+            <a href="ipgetoption.html" title="ipGetOption">
+                ipGetOption            </a>
+                    </li>        <li>
+            <a href="ipgetoptionlang.html" title="ipGetOptionLang">
+                ipGetOptionLang            </a>
+                    </li>        <li>
+            <a href="ipgetthemeoption.html" title="ipGetThemeOption">
+                ipGetThemeOption            </a>
+                    </li>        <li>
+            <a href="iphead.html" title="ipHead">
+                ipHead            </a>
+                    </li>        <li>
+            <a href="iphomeurl.html" title="ipHomeUrl">
+                ipHomeUrl            </a>
+                    </li>        <li>
+            <a href="iphtmlattributes.html" title="ipHtmlAttributes">
+                ipHtmlAttributes            </a>
+                    </li>        <li>
+            <a href="ipismanagementstate.html" title="ipIsManagementState">
+                ipIsManagementState            </a>
+                    </li>        <li>
+            <a href="ipjob.html" title="ipJob">
+                ipJob            </a>
+                    </li>        <li>
+            <a href="ipjs.html" title="ipJs">
+                ipJs            </a>
+                    </li>        <li>
+            <a href="iplog.html" title="ipLog">
+                ipLog            </a>
+                    </li>        <li>
+            <a href="ipreflection.html" title="ipReflection">
+                ipReflection            </a>
+                    </li>        <li>
+            <a href="ipremoveoption.html" title="ipRemoveOption">
+                ipRemoveOption            </a>
+                    </li>        <li>
+            <a href="ipremoveoptionlang.html" title="ipRemoveOptionLang">
+                ipRemoveOptionLang            </a>
+                    </li>        <li>
+            <a href="iprenderwidget.html" title="ipRenderWidget">
+                ipRenderWidget            </a>
+                    </li>        <li>
+            <a href="ipreplaceplaceholders.html" title="ipReplacePlaceholders">
+                ipReplacePlaceholders            </a>
+                    </li>        <li>
+            <a href="iprepositoryaddfile.html" title="ipRepositoryAddFile">
+                ipRepositoryAddFile            </a>
+                    </li>        <li>
+            <a href="iprequest.html" title="ipRequest">
+                ipRequest            </a>
+                    </li>        <li>
+            <a href="ipresponse.html" title="ipResponse">
+                ipResponse            </a>
+                    </li>        <li>
+            <a href="iproute.html" title="ipRoute">
+                ipRoute            </a>
+                    </li>        <li>
+            <a href="iprouteurl.html" title="ipRouteUrl">
+                ipRouteUrl            </a>
+                    </li>        <li>
+            <a href="ipsecuritytoken.html" title="ipSecurityToken">
+                ipSecurityToken            </a>
+                    </li>        <li>
+            <a href="ipsendemail.html" title="ipSendEmail">
+                ipSendEmail            </a>
+                    </li>        <li>
+            <a href="ipsetlayout.html" title="ipSetLayout">
+                ipSetLayout            </a>
+                    </li>        <li>
+            <a href="ipsetoption.html" title="ipSetOption">
+                ipSetOption            </a>
+                    </li>        <li>
+            <a href="ipsetoptionlang.html" title="ipSetOptionLang">
+                ipSetOptionLang            </a>
+                    </li>        <li>
+            <a href="ipslot.html" title="ipSlot">
+                ipSlot            </a>
+                    </li>        <li>
+            <a href="ipstorage.html" title="ipStorage">
+                ipStorage            </a>
+                    </li>        <li>
+            <a href="iptable.html" title="ipTable">
+                ipTable            </a>
+                    </li>        <li>
+            <a href="ipthemefile.html" title="ipThemeFile">
+                ipThemeFile            </a>
+                    </li>        <li>
+            <a href="ipthemeurl.html" title="ipThemeUrl">
+                ipThemeUrl            </a>
+                    </li>        <li>
+            <a href="ipunbindfile.html" title="ipUnbindFile">
+                ipUnbindFile            </a>
+                    </li>        <li>
+            <a href="ipunoccupiedfilename.html" title="ipUnoccupiedFileName">
+                ipUnoccupiedFileName            </a>
+                    </li>        <li>
+            <a href="ipuser.html" title="ipUser">
+                ipUser            </a>
+                    </li>        <li>
+            <a href="ipview.html" title="ipView">
+                ipView            </a>
+                    </li>        <li>
+            <a href="_e.html" title="_e">
+                _e            </a>
+                    </li>        <li>
+            <a href="__.html" title="__">
+                __            </a>
+                    </li></ul>
+        </li>        <li>
+            <a href="google-maps.html" title="Google maps">
+                Google maps            </a>
+                    </li>        <li class="parent">
+            <a href="grid.html" title="Grid">
+                Grid            </a>
+            <ul class="level2 children">        <li>
+            <a href="grid-multilingual.html" title="Multilingual fields">
+                Multilingual fields            </a>
+                    </li></ul>
+        </li>        <li>
+            <a href="javascript.html" title="JavaScript">
+                JavaScript            </a>
+                    </li>        <li>
+            <a href="job-list.html" title="Job list">
+                Job list            </a>
+                    </li>        <li>
+            <a href="jobs.html" title="Jobs">
+                Jobs            </a>
+                    </li>        <li>
+            <a href="jquery.html" title="jQuery">
+                jQuery            </a>
+                    </li>        <li>
+            <a href="layout.html" title="Layout">
+                Layout            </a>
+                    </li>        <li>
+            <a href="less-css.html" title="LESS CSS">
+                LESS CSS            </a>
+                    </li>        <li>
+            <a href="log.html" title="Log">
+                Log            </a>
+                    </li>        <li>
+            <a href="management-tools.html" title="Management tools">
+                Management tools            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/migration-from-3-x" title="Migration from 3.x">
+                Migration from 3.x            </a>
+                    </li>        <li>
+            <a href="model.html" title="Model">
+                Model            </a>
+                    </li>        <li>
+            <a href="mvc.html" title="MVC">
+                MVC            </a>
+                    </li>        <li>
+            <a href="navigation.html" title="Navigation (menu)">
+                Navigation (menu)            </a>
+                    </li>        <li>
+            <a href="nice-urls.html" title="Nice URLs">
+                Nice URLs            </a>
+                    </li>        <li>
+            <a href="payment-methods.html" title="Payment methods">
+                Payment methods            </a>
+                    </li>        <li>
+            <a href="placeholders.html" title="Placeholders">
+                Placeholders            </a>
+                    </li>        <li>
+            <a href="plugin.html" title="Plugins">
+                Plugin            </a>
+                    </li>        <li>
+            <a href="init.html" title="Plugin initialization">
+                Plugin initialization            </a>
+                    </li>        <li>
+            <a href="options.html" title="Options">
+                Plugin options            </a>
+                    </li>        <li>
+            <a href="repository.html" title="Repository &amp; reflections">
+                Repository &amp; reflections            </a>
+                    </li>        <li>
+            <a href="request.html" title="Request handling">
+                Request handling            </a>
+                    </li>        <li>
+            <a href="response.html" title="Response">
+                Response            </a>
+                    </li>        <li>
+            <a href="routing.html" title="Routing">
+                Routing            </a>
+                    </li>        <li>
+            <a href="safe-mode.html" title="Safe mode">
+                Safe mode            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/session" title="Session">
+                Session            </a>
+                    </li>        <li>
+            <a href="slots.html" title="Slots">
+                Slots            </a>
+                    </li>        <li>
+            <a href="storage.html" title="Storage">
+                Storage            </a>
+                    </li>        <li>
+            <a href="subscription-payment-methods.html" title="Subscription payment methods">
+                Subscription payment methods            </a>
+                    </li>        <li>
+            <a href="theme.html" title="Theme">
+                Theme            </a>
+                    </li>        <li>
+            <a href="theme-options.html" title="Theme options">
+                Theme options            </a>
+                    </li>        <li>
+            <a href="thinking-in-impresspages.html" title="MUST READ">
+                Thinking in Construct            </a>
+                    </li>        <li>
+            <a href="tinymce.html" title="TinyMce (Text editor)">
+                TinyMce (Text editor)            </a>
+                    </li>        <li>
+            <a href="translations.html" title="Translations">
+                Translations            </a>
+                    </li>        <li>
+            <a href="users.html" title="Users">
+                Users            </a>
+                    </li>        <li>
+            <a href="validators.html" title="Data validator">
+                Validators            </a>
+                    </li>        <li>
+            <a href="view.html" title="View (MVC)">
+                View            </a>
+                    </li>        <li class="active">
+            <a href="widgets.html" title="Widgets">
+                Widget            </a>
+                    </li>        <li>
+            <a href="widget-style.html" title="Widget style (CSS and LESS)">
+                Widget style (CSS and LESS)            </a>
+                    </li></ul>
+            
+            <a href="widgets.html#" class="toggle"></a>
+        </nav>
+    </div>
+    <div class="main col_12 col_md_12 col_lg_8 pull-right">
+        <div class="breadcrumb">
+            <ol class="breadcrumb">
+    <li><a href="https://www.impresspages.org/">Home</a></li>
+            <li><a href="https://www.impresspages.org/docs" title="Docs">Docs</a></li>
+                <li><a href="https://www.impresspages.org/manual" title="Manual">Manual</a></li>
+                <li class="active">Widget</li>
+    </ol>
+        </div>
+        <div id="ipBlock-main" data-revisionid='3743' data-languageid='0' class="ipBlock"><div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h1 class="_title">
+            Widget    </h1>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>Widget<b> </b>is a content element which can be dragged and dropped into webpage <a href="block.html">blocks</a>.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>To create a widget, you need to add <span class="docsCode">Widget</span> subdirectory to your plugin. There you have to create separate subdirectories for every <span style="line-height: 1.5;">widget. Widget subdirectory names should have no spaces or extended characters: it is recommended to use </span><a style="line-height: 1.5;" href="http://en.wikipedia.org/wiki/CamelCase">UpperCamelCase</a><span style="line-height: 1.5;"> capitalization, e.g. <span class="docsCode">MyWidget </span>.</span></p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Minimal Widget    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>You can download the m<span>ost basic "Hello world" </span><span>widget example <a href="hello-world-widget.html">here</a>. It contains <span>just a single view file with some HTML code. </span></span></p>
+<p><span>To create a widget from scratch, you need to </span>make a new plugin. Then add a subdirectory for your widget (e.g. <span class="docsCode">/MySamplePlugin/Widget/HelloWorld/</span>). Add <span class="docsCode">skin</span> subdirectory, and create a file <span class="docsCode"><strong>default.php </strong></span> containing HTML code to display<span></span><span style="line-height: 1.5;">. This is enough for widget to be used. Make sure you haven't forgotten to <strong>activate your plugin</strong> in admin panel.</span></p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Add widget management    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p><span style="line-height: 1.5;">Widget management should be implemented using JavaScript. On page load, Construct executes <span class="docsCode">ConstructWidget_MyWidget.init</span> function. The purpose of this function is to initialize management tools of the widget. The first argument passed to this function is jQuery object holding widget's DOM element. The second parameter is current widget's data from the database. </span>If you have two widgets, this function will be executed twice on each of them. </p>
+<p><span style="line-height: 1.5;">There are no strict rules how to implement your widget's management. You can make editing inline as default text widget or open a popup like HTML widget.</span></p>
+<p><span style="line-height: 1.5;">It is also up to you to place "save" buttons or autosave the content. Construct will store data to the database  whenever you execute <span class="docsCode">$widgetObject.save(data, true, [callback])</span> method where <span class="docsCode">$widgetObject</span> is the first argument of init method. The first parameter of <span class="docsCode">save</span> method accepts the data to be stored to the database, next parameter instructs system if the widget has to be reloaded. Additionally you can pass a third parameter - a callback function.</span></p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p><span class="docsNoteInfo" style="line-height: 1.5;">Widget's function should start with<strong> <span class="docsCode">ConstructWidget_</span> </strong>keyword.</span></p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p><span class="docsDescription">Sample widget's JavaScript file </span></p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: js,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">/* Place the code below into MySamplePlugin/Widget/HelloWorld/assets/MyWidget.js file */
+ConstructWidget_MyWidget = function() {
+
+    this.$widgetObject = null;
+
+    this.init = function($widgetObject, data) {
+        $widgetObject.find(&#039;.myWidgetField&#039;).on(&#039;click&#039;, function() {
+            var value = prompt(&#039;Enter the value&#039;);
+            $widgetObject.save({myValue: value}, true);
+        });
+
+    };
+
+    this.onAdd = function () {
+
+    }
+
+};</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>The data you save is automatically available in <span class="docsCode">skin/default.php</span> view file described above. Use that data to generate widget's look.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Widget assets    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>All the public files used in a widget, such as images, should be placed in assets subdirectory of the widget.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            PHP side    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>In some cases you might need to controll widget's behaviour in PHP side. By default all widgets use <span><span class="docsCode">\Construct\WidgetController</span> class. You can extend this class and reimplement default functions in the way you need. To do so, create</span> <span class="docsCode">Controller.php</span>  file in your widget's root directory with following content. This simple example sets a widget title.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: php,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">namespace Plugin\MySamplePlugin\Widget\MySampleWidget;
+
+class Controller extends \Construct\WidgetController{
+    public function getTitle() {
+        return __(&#039;Sample widget&#039;, &#039;ipAdmin&#039;);
+    }  
+}</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>Please have a look at <span class="docsCode">Ip/WidgetController.php</span> file for other functions that you can override.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title" id="skin">
+            Widget skins    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Image ipSkin-default"
+        >
+        <a
+                    rel="lightbox"
+            href="https://www.impresspages.org/file/2014/11/04/impresspages_skin_select_1.png"
+                        title=""
+        data-description=""
+        >
+        <img class="ipsImage" src="../file/2014/11/04/impresspages_skin_select_1_2.png" alt="" title="" />
+    </a>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>A widget can have several different HTML skins, which basically are widget's view files placed in <span class="docsCode">skin</span> directory. This is a good way to provide several different looks of the same widget. The default skin file has a name <span class="docsCode">default.php</span> - this skin is mandatory for all widgets. But you can add any number of additional skin files. For sample code, see Divider widget, located in Construct <span class="docsCode">Ip/Internal/Content/Widget/Divider</span> directory.</p>
+<p>If widget has more than one skin, a gear icon will appear on the left corner with option to select the skin.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>All data that you have saved using JavaScript is automatically available in a skin. If you have stored an object <span class="docsCode">{testVariable: 'testValue'}</span>, then <span class="docsCode">&lt;?php echo $testVariable ?&gt;</span> will be available in the skin.</p>
+<p><span class="docsNoteInfo">You can add additional skin to chosen widget by adding a file to your theme <span class="docsCode">Theme/xxx/override/Ip/Internal/Content/Widget/xxx/skin/xxx.php</span></span></p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p><span class="docsDescription">In PHP controller you can modify data before it is passed to the skin. Extend generateHtml method to do so.</span></p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: php,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,highlight: 7,
+            gutter: false">&lt;?php
+
+// Put this into Controller.php
+
+namespace Plugin\MyPlugin\Widget\MyWidget;
+
+class Controller extends \Construct\WidgetController
+{
+    public function generateHtml($revisionId, $widgetId, $data, $skin)
+    {
+        $data = array (&#039;myVariable1&#039; =&gt; &#039;My string.&#039;, &#039;myVariable2&#039; =&gt; &#039;My other string.&#039;);
+
+        return parent::generateHtml($revisionId, $widgetId, $data, $skin);
+    }
+}</pre>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: html,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">&lt;!-- Put this into skin/default.php --&gt;
+&lt;h1&gt;&lt;?php echo $myVariable1; ?&gt;&lt;/h1&gt;
+&lt;div&gt;&lt;?php echo $myVariable2; ?&gt;&lt;/div&gt;</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Changing widget's icon    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>To change a default widget icon, place a file called <span class="docsCode">icon.svg </span> or <span class="docsCode">icon.png</span> to your widget <span class="docsCode">assets</span> directory.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h3 class="_title">
+            See also    </h3>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <ul>
+<li><a style="line-height: 1.5; background-color: #ffffff;" href="iprenderwidget.html">ipRenderWidget()</a></li>
+<li><a style="line-height: 1.5; background-color: #ffffff;" href="hello-world-widget.html">Download "Hello World" widget example</a></li>
+</ul></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Helper HTML snippets in admin mode    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>Widgets often need an additional HTML in management mode. Add subdirectory 'snippet' to your widget. Any <a href="view.html">view</a> file placed in here will be automatically added to the end of HTML body. So you can use it straight away in widget's management JS.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            See also    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <ul>
+<li><a style="line-height: 1.5; background-color: #ffffff;" href="default-widgets.html">Default widgets</a><span style="line-height: 1.5;"> </span></li>
+</ul></div>
+</div>
+</div>
+        <div
+    class="ipWidget ipWidget-Divider ipSkin-default"
+        >
+    </div>
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'impresspages'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    <div class="side col_12 col_md_12 col_lg_3 pull-left">
+        <aside>
+            <div id="ipBlock-side1" data-revisionid='0' data-languageid='1' class="ipBlock"></div>
+        </aside>
+    </div>
+</div>
+
+<footer>
+    <div class="social separator">
+        <div class="wrapper">
+            <div class="col_12">
+                <a href="https://www.impresspages.org/download" class="btn btn-primary pull-right">Download</a>
+                <a href="http://twitter.com/impresspages" class="icon twitter" target="_blank"><span class="sr-only">Follow us on Twitter</span></a>
+                <a href="http://www.facebook.com/Construct" class="icon facebook" target="_blank"><span class="sr-only">Join us on Facebook</span></a>
+                <a href="http://www.youtube.com/user/impresspages" class="icon youtube" target="_blank"><span class="sr-only">YouTube</span></a>
+                <a href="https://www.impresspages.org/rss" class="icon rss" target="_blank"><span class="sr-only">Subscribe to our RSS feed</span></a>
+                <a href="https://github.com/impresspages/Construct" class="icon github" target="_blank"><span class="sr-only">Fork us on GitHub</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="copy separator">
+        <div class="wrapper">
+            <div class="col_12">
+                <a class="logo" href="https://www.impresspages.org/"><img src="../Theme/Construct/assets/img/impresspages_logo_small.png" alt="Construct"></a>
+                <p  class="text">Open source since 2009 <br />Building a better Web.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+var ip = {"baseUrl":"https:\/\/www.impresspages.org\/","safeMode":false,"languageId":1,"languageUrl":"https:\/\/www.impresspages.org\/","languageCode":"en","languageTextDirection":"ltr","theme":"Construct","pageId":"201","revisionId":"3743","securityToken":"4738d227c6bf2c69ef257bb1d1a248d1","developmentEnvironment":false,"debugMode":false,"isManagementState":false,"isAdminState":0,"isAdminNavbarDisabled":0,"gmapsApiKey":""};
+    var ipSessionRefresh = 1420;
+    var ipValidatorTranslations = {"Ip-admin":{"*":"Please correct this value",":email":"Please enter a valid email address",":number":"Please enter a valid numeric value",":url":"Please enter a valid URL","[max]":"Please enter a value no larger than $1","[min]":"Please enter a value of at least $1","[required]":"Please complete this mandatory field"},"en":{"*":"Please correct this value",":email":"Please enter a valid email address",":number":"Please enter a valid numeric value",":url":"Please enter a valid URL","[max]":"Please enter a value no larger than $1","[min]":"Please enter a value of at least $1","[required]":"Please complete this mandatory field"}};
+    var ipUrlOverrides = [];
+</script>
+  <script type="text/javascript" src="../Ip/Internal/Core/assets/ipCore.min.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shCore.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushCss.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushDiff.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushJScript.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushPhp.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushPlain.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushSass.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushSql.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushXml.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/highlight.js@42"></script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-848680-25', '.impresspages.org');
+    ga('send', 'pageview');
+
+</script>  <script type="text/javascript" src="../Plugin/Colorbox/assets/colorbox/jquery.colorbox-min.js@42"></script>
+  <script type="text/javascript" src="../Plugin/Colorbox/assets/colorboxInit.js@42"></script>
+  <script type="text/javascript">
+
+  (function() {
+    var cx = '009443016237745017729:eanfkdtpbvg';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+
+</script>  <script type="text/javascript" src="../Plugin/User/assets/user.js@42"></script>
+  <script type="text/javascript" src="../Plugin/HybridAuth/assets/hybridauth.js@42"></script>
+  <script type="text/javascript" src="../Plugin/PayPalSubscription/assets/paypalSubscription.js@42"></script>
+  <script type="text/javascript" src="../Plugin/Support/assets/support.js@42"></script>
+  <script type="text/javascript" src="../Theme/Construct/assets/js/site.js@42"></script>
+
+</body>
+</html>

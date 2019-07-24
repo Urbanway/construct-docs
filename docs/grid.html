@@ -1,0 +1,1622 @@
+<!DOCTYPE html><html lang="en">
+<head>
+                <meta charset="UTF-8" />
+    <title>Grid</title>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="generator" content="Construct" />
+    <link href="../Plugin/CodeHighlight/assets/syntaxhighlighter/css/shCoreDefault.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/CodeHighlight/assets/shThemeConstruct.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/Colorbox/assets/theme2/colorbox.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/User/assets/user.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/HybridAuth/assets/hybridauth.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/Support/assets/notSubscribedView.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Theme/Construct/assets/docs.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Theme/Construct/assets/overrides.css@42.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <div class="navbar navbar-static-top navbar-inverse" style="z-index: 1001;">         <div class="wrapper">
+            <div class="col_12">
+                <a href="https://www.impresspages.org/" class="navbar-brand icon"></a>
+                                    <div class="search navbar-right">
+                        <a href="https://www.impresspages.org/search" class="toggle pull-right">&nbsp;</a>
+                    </div>
+                                <a class="btn btn-primary navbar-btn navbar-right" href="https://www.impresspages.org/download">Download</a>
+                                    <a class="btn btn-default navbar-btn navbar-right navbar-login" href="https://www.impresspages.org/login">Login</a>
+                
+                <ul class="level1 nav navbar-nav navbar-left">        <li>
+            <a href="https://market.impresspages.org" title="Market">
+                Market            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/blog2" title="Blog">
+                Blog            </a>
+                    </li>        <li class="crumb">
+            <a href="https://www.impresspages.org/docs" title="Docs">
+                Docs            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/community" title="Community">
+                Community            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/support" title="Support">
+                Support            </a>
+                    </li>        <li>
+            <a href="http://www.impresspages.org/about-us" title="About">
+                About            </a>
+                    </li></ul>
+            </div>
+        </div>
+    </div>
+            <div class="navbar  navbar-static-top navbar-default">
+            <div class="wrapper">
+                <div class="col_12">
+                    <ul class="level1 nav navbar-nav">        <li class="crumb">
+            <a href="thinking-in-impresspages.html" title="Manual">
+                Manual            </a>
+                    </li>        <li>
+            <a href="hello-world-plugin.html" title="Examples">
+                Examples            </a>
+                    </li>        <li>
+            <a href="cdn.html" title="Tips">
+                Tips            </a>
+                    </li>        <li>
+            <a href="installation.html" title="User manual">
+                User manual            </a>
+                    </li></ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="wrapper">
+    <div class="split col_lg_3 visible-md visible-lg"></div>
+    <div class="sidenav col_12 col_md_12 col_lg_3 pull-left">
+        <span class="sidenavHeader">Topics</span>
+        <nav class="collapsable ">
+                            <ul class="short level1">        <li>
+            <a href="thinking-in-impresspages.html" title="MUST READ">
+                Thinking in Construct            </a>
+                    </li>        <li>
+            <a href="controller.html" title="Controller">
+                Controller            </a>
+                    </li>        <li>
+            <a href="model.html" title="Model">
+                Model            </a>
+                    </li>        <li>
+            <a href="view.html" title="View (MVC)">
+                View            </a>
+                    </li>        <li>
+            <a href="routing.html" title="Routing">
+                Routing            </a>
+                    </li>        <li>
+            <a href="theme.html" title="Theme">
+                Theme            </a>
+                    </li>        <li>
+            <a href="widgets.html" title="Widgets">
+                Widget            </a>
+                    </li>        <li>
+            <a href="layout.html" title="Layout">
+                Layout            </a>
+                    </li>        <li>
+            <a href="block.html" title="Blocks">
+                Block            </a>
+                    </li>        <li>
+            <a href="plugin.html" title="Plugins">
+                Plugin            </a>
+                    </li></ul>
+<ul class="extended level1">        <li>
+            <a href="admin-menu.html" title="Admin menu">
+                Admin menu            </a>
+                    </li>        <li>
+            <a href="application.html" title="Application">
+                Application            </a>
+                    </li>        <li>
+            <a href="autoloader.html" title="Autoloader">
+                Autoloader            </a>
+                    </li>        <li>
+            <a href="block.html" title="Blocks">
+                Block            </a>
+                    </li>        <li class="parent">
+            <a href="class-ip-application.html" title="Classes">
+                Classes            </a>
+            <ul class="level2 children">        <li>
+            <a href="class-ip-application.html" title="Application">
+                Application            </a>
+                    </li>        <li>
+            <a href="class-ip-block.html" title="Block">
+                Block            </a>
+                    </li>        <li>
+            <a href="class-ip-config.html" title="Config">
+                Config            </a>
+                    </li>        <li>
+            <a href="class-ip-content.html" title="Content">
+                Content            </a>
+                    </li>        <li>
+            <a href="class-ip-controller.html" title="Controller">
+                Controller            </a>
+                    </li>        <li>
+            <a href="class-ip-db.html" title="Db">
+                Db            </a>
+                    </li>        <li>
+            <a href="class-ip-dispatcher.html" title="Dispatcher">
+                Dispatcher            </a>
+                    </li>        <li>
+            <a href="class-ip-form.html" title="Form">
+                Form            </a>
+                    </li>        <li>
+            <a href="class-ip-form-field.html" title="Form/Field">
+                Form/Field            </a>
+                    </li>        <li>
+            <a href="class-ip-form-validator.html" title="Form/Validator">
+                Form/Validator            </a>
+                    </li>        <li>
+            <a href="class-ip-language.html" title="Language">
+                Language            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/menu-helper" title="Menu/Helper">
+                Menu/Helper            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/menu-item" title="Menu/Item">
+                Menu/Item            </a>
+                    </li>        <li>
+            <a href="class-ip-options.html" title="Options">
+                Options            </a>
+                    </li>        <li>
+            <a href="class-ip-page.html" title="Page">
+                Page            </a>
+                    </li>        <li>
+            <a href="class-ip-request.html" title="Request">
+                Request            </a>
+                    </li>        <li>
+            <a href="class-ip-response.html" title="Response">
+                Response            </a>
+                    </li>        <li>
+            <a href="response-json.html" title="Response/Json">
+                Response/Json            </a>
+                    </li>        <li>
+            <a href="response-layout.html" title="Response/Layout">
+                Response/Layout            </a>
+                    </li>        <li>
+            <a href="response-pagenotfound.html" title="Response/PageNotFound">
+                Response/PageNotFound            </a>
+                    </li>        <li>
+            <a href="response-redirect.html" title="Response/Redirect">
+                Response/Redirect            </a>
+                    </li>        <li>
+            <a href="class-ip-route.html" title="Route">
+                Route            </a>
+                    </li>        <li>
+            <a href="class-ip-storage.html" title="Storage">
+                Storage            </a>
+                    </li>        <li>
+            <a href="class-ip-user.html" title="User">
+                User            </a>
+                    </li>        <li>
+            <a href="class-ip-view.html" title="View">
+                View            </a>
+                    </li>        <li>
+            <a href="class-ip-widgetcontroller.html" title="WidgetController">
+                WidgetController            </a>
+                    </li></ul>
+        </li>        <li>
+            <a href="configuration.html" title="Configuration">
+                Configuration            </a>
+                    </li>        <li>
+            <a href="content.html" title="Content">
+                Content            </a>
+                    </li>        <li>
+            <a href="controller.html" title="Controller">
+                Controller            </a>
+                    </li>        <li>
+            <a href="cron.html" title="Cron">
+                Cron            </a>
+                    </li>        <li>
+            <a href="css.html" title="CSS and LESS">
+                CSS            </a>
+                    </li>        <li>
+            <a href="database.html" title="Database">
+                Database            </a>
+                    </li>        <li>
+            <a href="ecommerce.html" title="E-commerce">
+                Ecommerce            </a>
+                    </li>        <li>
+            <a href="email.html" title="Email">
+                Email            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/error404" title="Error404">
+                Error404            </a>
+                    </li>        <li>
+            <a href="escaping.html" title="Escaping">
+                Escaping            </a>
+                    </li>        <li>
+            <a href="event-list.html" title="Event list">
+                Event list            </a>
+                    </li>        <li>
+            <a href="events.html" title="Events">
+                Events            </a>
+                    </li>        <li>
+            <a href="filter-list.html" title="Filter list">
+                Filter list            </a>
+                    </li>        <li>
+            <a href="filters.html" title="Event filters">
+                Filters            </a>
+                    </li>        <li>
+            <a href="form.html" title="Forms">
+                Form            </a>
+                    </li>        <li>
+            <a href="form-validation-in-javascript.html" title="Form JavaScript and validation">
+                Form JavaScript and validation            </a>
+                    </li>        <li class="parent">
+            <a href="form-object.html" title="Form object">
+                Form object            </a>
+            <ul class="level2 children">        <li>
+            <a href="form-object/captcha.html" title="Captcha">
+                Captcha            </a>
+                    </li>        <li>
+            <a href="form-object/checkbox.html" title="Checkbox">
+                Checkbox            </a>
+                    </li>        <li>
+            <a href="form-object/email.html" title="Email">
+                Email            </a>
+                    </li>        <li>
+            <a href="form-object/file.html" title="File">
+                File            </a>
+                    </li>        <li>
+            <a href="form-object/info.html" title="Info">
+                Info            </a>
+                    </li>        <li>
+            <a href="form-object/radio.html" title="Radio">
+                Radio            </a>
+                    </li>        <li>
+            <a href="form-object/repositoryfile.html" title="RepositoryFile">
+                RepositoryFile            </a>
+                    </li>        <li>
+            <a href="form-object/select.html" title="Select">
+                Select            </a>
+                    </li>        <li>
+            <a href="form-object/submit.html" title="Submit">
+                Submit            </a>
+                    </li>        <li>
+            <a href="form-object/text.html" title="Text">
+                Text            </a>
+                    </li>        <li>
+            <a href="form-object/textarea.html" title="TextArea">
+                TextArea            </a>
+                    </li></ul>
+        </li>        <li>
+            <a href="form-validation-in-php.html" title="Form validation in PHP">
+                Form validation in PHP            </a>
+                    </li>        <li>
+            <a href="form-generation.html" title="Form: generating HTML">
+                Form: generating HTML            </a>
+                    </li>        <li>
+            <a href="date-time-currency.html" title="Format date, time, currency">
+                Format date, time, currency            </a>
+                    </li>        <li class="parent">
+            <a href="esc.html" title="Functions">
+                Functions            </a>
+            <ul class="level2 children">        <li>
+            <a href="functions.html" title="esc">
+                esc            </a>
+                    </li>        <li>
+            <a href="escattr.html" title="escAttr">
+                escAttr            </a>
+                    </li>        <li>
+            <a href="esctextarea.html" title="escTextarea">
+                escTextarea            </a>
+                    </li>        <li>
+            <a href="ipactionurl.html" title="ipActionUrl">
+                ipActionUrl            </a>
+                    </li>        <li>
+            <a href="ipaddcss.html" title="ipAddCss">
+                ipAddCss            </a>
+                    </li>        <li>
+            <a href="ipaddjs.html" title="ipAddJs">
+                ipAddJs            </a>
+                    </li>        <li>
+            <a href="ipaddjscontent.html" title="ipAddJsContent">
+                ipAddJsContent            </a>
+                    </li>        <li>
+            <a href="ipaddjsvariable.html" title="ipAddJsVariable">
+                ipAddJsVariable            </a>
+                    </li>        <li>
+            <a href="ipadminid.html" title="ipAdminId">
+                ipAdminId            </a>
+                    </li>        <li>
+            <a href="ipadminpermission.html" title="ipAdminPermission">
+                ipAdminPermission            </a>
+                    </li>        <li>
+            <a href="ipapplication.html" title="ipApplication">
+                ipApplication            </a>
+                    </li>        <li>
+            <a href="ipbindfile.html" title="ipBindFile">
+                ipBindFile            </a>
+                    </li>        <li>
+            <a href="ipblock.html" title="ipBlock">
+                ipBlock            </a>
+                    </li>        <li>
+            <a href="ipconfig.html" title="ipConfig">
+                ipConfig            </a>
+                    </li>        <li>
+            <a href="ipcontent.html" title="ipContent">
+                ipContent            </a>
+                    </li>        <li>
+            <a href="ipconvertcurrency.html" title="ipConvertCurrency">
+                ipConvertCurrency            </a>
+                    </li>        <li>
+            <a href="ipdb.html" title="ipDb">
+                ipDb            </a>
+                    </li>        <li>
+            <a href="ipdoctypedeclaration.html" title="ipDoctypeDeclaration">
+                ipDoctypeDeclaration            </a>
+                    </li>        <li>
+            <a href="ipemailtemplate.html" title="ipEmailTemplate">
+                ipEmailTemplate            </a>
+                    </li>        <li>
+            <a href="ipevent.html" title="ipEvent">
+                ipEvent            </a>
+                    </li>        <li>
+            <a href="ipfile.html" title="ipFile">
+                ipFile            </a>
+                    </li>        <li>
+            <a href="ipfileurl.html" title="ipFileUrl">
+                ipFileUrl            </a>
+                    </li>        <li>
+            <a href="ipfilter.html" title="ipFilter">
+                ipFilter            </a>
+                    </li>        <li>
+            <a href="ipformatbytes.html" title="ipFormatBytes">
+                ipFormatBytes            </a>
+                    </li>        <li>
+            <a href="ipformatdate.html" title="ipFormatDate">
+                ipFormatDate            </a>
+                    </li>        <li>
+            <a href="ipformatdatetime.html" title="ipFormatDateTime">
+                ipFormatDateTime            </a>
+                    </li>        <li>
+            <a href="ipformatprice.html" title="ipFormatPrice">
+                ipFormatPrice            </a>
+                    </li>        <li>
+            <a href="ipformattime.html" title="ipFormatTime">
+                ipFormatTime            </a>
+                    </li>        <li>
+            <a href="ipgetlayout.html" title="ipGetLayout">
+                ipGetLayout            </a>
+                    </li>        <li>
+            <a href="ipgetoption.html" title="ipGetOption">
+                ipGetOption            </a>
+                    </li>        <li>
+            <a href="ipgetoptionlang.html" title="ipGetOptionLang">
+                ipGetOptionLang            </a>
+                    </li>        <li>
+            <a href="ipgetthemeoption.html" title="ipGetThemeOption">
+                ipGetThemeOption            </a>
+                    </li>        <li>
+            <a href="iphead.html" title="ipHead">
+                ipHead            </a>
+                    </li>        <li>
+            <a href="iphomeurl.html" title="ipHomeUrl">
+                ipHomeUrl            </a>
+                    </li>        <li>
+            <a href="iphtmlattributes.html" title="ipHtmlAttributes">
+                ipHtmlAttributes            </a>
+                    </li>        <li>
+            <a href="ipismanagementstate.html" title="ipIsManagementState">
+                ipIsManagementState            </a>
+                    </li>        <li>
+            <a href="ipjob.html" title="ipJob">
+                ipJob            </a>
+                    </li>        <li>
+            <a href="ipjs.html" title="ipJs">
+                ipJs            </a>
+                    </li>        <li>
+            <a href="iplog.html" title="ipLog">
+                ipLog            </a>
+                    </li>        <li>
+            <a href="ipreflection.html" title="ipReflection">
+                ipReflection            </a>
+                    </li>        <li>
+            <a href="ipremoveoption.html" title="ipRemoveOption">
+                ipRemoveOption            </a>
+                    </li>        <li>
+            <a href="ipremoveoptionlang.html" title="ipRemoveOptionLang">
+                ipRemoveOptionLang            </a>
+                    </li>        <li>
+            <a href="iprenderwidget.html" title="ipRenderWidget">
+                ipRenderWidget            </a>
+                    </li>        <li>
+            <a href="ipreplaceplaceholders.html" title="ipReplacePlaceholders">
+                ipReplacePlaceholders            </a>
+                    </li>        <li>
+            <a href="iprepositoryaddfile.html" title="ipRepositoryAddFile">
+                ipRepositoryAddFile            </a>
+                    </li>        <li>
+            <a href="iprequest.html" title="ipRequest">
+                ipRequest            </a>
+                    </li>        <li>
+            <a href="ipresponse.html" title="ipResponse">
+                ipResponse            </a>
+                    </li>        <li>
+            <a href="iproute.html" title="ipRoute">
+                ipRoute            </a>
+                    </li>        <li>
+            <a href="iprouteurl.html" title="ipRouteUrl">
+                ipRouteUrl            </a>
+                    </li>        <li>
+            <a href="ipsecuritytoken.html" title="ipSecurityToken">
+                ipSecurityToken            </a>
+                    </li>        <li>
+            <a href="ipsendemail.html" title="ipSendEmail">
+                ipSendEmail            </a>
+                    </li>        <li>
+            <a href="ipsetlayout.html" title="ipSetLayout">
+                ipSetLayout            </a>
+                    </li>        <li>
+            <a href="ipsetoption.html" title="ipSetOption">
+                ipSetOption            </a>
+                    </li>        <li>
+            <a href="ipsetoptionlang.html" title="ipSetOptionLang">
+                ipSetOptionLang            </a>
+                    </li>        <li>
+            <a href="ipslot.html" title="ipSlot">
+                ipSlot            </a>
+                    </li>        <li>
+            <a href="ipstorage.html" title="ipStorage">
+                ipStorage            </a>
+                    </li>        <li>
+            <a href="iptable.html" title="ipTable">
+                ipTable            </a>
+                    </li>        <li>
+            <a href="ipthemefile.html" title="ipThemeFile">
+                ipThemeFile            </a>
+                    </li>        <li>
+            <a href="ipthemeurl.html" title="ipThemeUrl">
+                ipThemeUrl            </a>
+                    </li>        <li>
+            <a href="ipunbindfile.html" title="ipUnbindFile">
+                ipUnbindFile            </a>
+                    </li>        <li>
+            <a href="ipunoccupiedfilename.html" title="ipUnoccupiedFileName">
+                ipUnoccupiedFileName            </a>
+                    </li>        <li>
+            <a href="ipuser.html" title="ipUser">
+                ipUser            </a>
+                    </li>        <li>
+            <a href="ipview.html" title="ipView">
+                ipView            </a>
+                    </li>        <li>
+            <a href="_e.html" title="_e">
+                _e            </a>
+                    </li>        <li>
+            <a href="__.html" title="__">
+                __            </a>
+                    </li></ul>
+        </li>        <li>
+            <a href="google-maps.html" title="Google maps">
+                Google maps            </a>
+                    </li>        <li class="active parent">
+            <a href="grid.html" title="Grid">
+                Grid            </a>
+            <ul class="level2 children">        <li>
+            <a href="grid-multilingual.html" title="Multilingual fields">
+                Multilingual fields            </a>
+                    </li></ul>
+        </li>        <li>
+            <a href="javascript.html" title="JavaScript">
+                JavaScript            </a>
+                    </li>        <li>
+            <a href="job-list.html" title="Job list">
+                Job list            </a>
+                    </li>        <li>
+            <a href="jobs.html" title="Jobs">
+                Jobs            </a>
+                    </li>        <li>
+            <a href="jquery.html" title="jQuery">
+                jQuery            </a>
+                    </li>        <li>
+            <a href="layout.html" title="Layout">
+                Layout            </a>
+                    </li>        <li>
+            <a href="less-css.html" title="LESS CSS">
+                LESS CSS            </a>
+                    </li>        <li>
+            <a href="log.html" title="Log">
+                Log            </a>
+                    </li>        <li>
+            <a href="management-tools.html" title="Management tools">
+                Management tools            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/migration-from-3-x" title="Migration from 3.x">
+                Migration from 3.x            </a>
+                    </li>        <li>
+            <a href="model.html" title="Model">
+                Model            </a>
+                    </li>        <li>
+            <a href="mvc.html" title="MVC">
+                MVC            </a>
+                    </li>        <li>
+            <a href="navigation.html" title="Navigation (menu)">
+                Navigation (menu)            </a>
+                    </li>        <li>
+            <a href="nice-urls.html" title="Nice URLs">
+                Nice URLs            </a>
+                    </li>        <li>
+            <a href="payment-methods.html" title="Payment methods">
+                Payment methods            </a>
+                    </li>        <li>
+            <a href="placeholders.html" title="Placeholders">
+                Placeholders            </a>
+                    </li>        <li>
+            <a href="plugin.html" title="Plugins">
+                Plugin            </a>
+                    </li>        <li>
+            <a href="init.html" title="Plugin initialization">
+                Plugin initialization            </a>
+                    </li>        <li>
+            <a href="options.html" title="Options">
+                Plugin options            </a>
+                    </li>        <li>
+            <a href="repository.html" title="Repository &amp; reflections">
+                Repository &amp; reflections            </a>
+                    </li>        <li>
+            <a href="request.html" title="Request handling">
+                Request handling            </a>
+                    </li>        <li>
+            <a href="response.html" title="Response">
+                Response            </a>
+                    </li>        <li>
+            <a href="routing.html" title="Routing">
+                Routing            </a>
+                    </li>        <li>
+            <a href="safe-mode.html" title="Safe mode">
+                Safe mode            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/session" title="Session">
+                Session            </a>
+                    </li>        <li>
+            <a href="slots.html" title="Slots">
+                Slots            </a>
+                    </li>        <li>
+            <a href="storage.html" title="Storage">
+                Storage            </a>
+                    </li>        <li>
+            <a href="subscription-payment-methods.html" title="Subscription payment methods">
+                Subscription payment methods            </a>
+                    </li>        <li>
+            <a href="theme.html" title="Theme">
+                Theme            </a>
+                    </li>        <li>
+            <a href="theme-options.html" title="Theme options">
+                Theme options            </a>
+                    </li>        <li>
+            <a href="thinking-in-impresspages.html" title="MUST READ">
+                Thinking in Construct            </a>
+                    </li>        <li>
+            <a href="tinymce.html" title="TinyMce (Text editor)">
+                TinyMce (Text editor)            </a>
+                    </li>        <li>
+            <a href="translations.html" title="Translations">
+                Translations            </a>
+                    </li>        <li>
+            <a href="users.html" title="Users">
+                Users            </a>
+                    </li>        <li>
+            <a href="validators.html" title="Data validator">
+                Validators            </a>
+                    </li>        <li>
+            <a href="view.html" title="View (MVC)">
+                View            </a>
+                    </li>        <li>
+            <a href="widgets.html" title="Widgets">
+                Widget            </a>
+                    </li>        <li>
+            <a href="widget-style.html" title="Widget style (CSS and LESS)">
+                Widget style (CSS and LESS)            </a>
+                    </li></ul>
+            
+            <a href="grid.html#" class="toggle"></a>
+        </nav>
+    </div>
+    <div class="main col_12 col_md_12 col_lg_8 pull-right">
+        <div class="breadcrumb">
+            <ol class="breadcrumb">
+    <li><a href="https://www.impresspages.org/">Home</a></li>
+            <li><a href="https://www.impresspages.org/docs" title="Docs">Docs</a></li>
+                <li><a href="https://www.impresspages.org/manual" title="Manual">Manual</a></li>
+                <li class="active">Grid</li>
+    </ol>
+        </div>
+        <div id="ipBlock-main" data-revisionid='4261' data-languageid='0' class="ipBlock"><div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h1 class="_title">
+            Grid (CRUD)    </h1>
+</div>
+<div
+    class="ipWidget ipWidget-Image ipSkin-default"
+        >
+        <a
+                    rel="lightbox"
+            href="https://www.impresspages.org/file/2015/01/01/impresspages_grid_1.png"
+                        title=""
+        data-description=""
+        >
+        <img class="ipsImage" src="../file/2015/01/01/impresspages_grid_2.png" alt="" title="" />
+    </a>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>Grid is a set of classes that helps you to create a management interface for records in the database. To create a fully functional manager just create <span class="docsCode">AdminController.php</span> file in your plugin and put the code below. Replace <span class="docsCode">tableName</span> with actual table you already have in your database. Grid will automatically fetch all fields and create interface to edit records. You will find it in administration menu after refreshing the browser.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: php,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">&lt;?php
+
+namespace Plugin\MyPlugin;
+
+
+class AdminController
+{
+
+    public function index()
+    {
+        $config = array(
+            &#039;table&#039; =&gt; &#039;table_name_without_prefix&#039;
+        );
+        return crud($config);
+    }
+}</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p><span class="docsNoteWarning" style="line-height: 1.5;">For Grid to work properly SQL table should have:</span></p>
+<ul>
+<li><span style="line-height: 1.5;">the same prefix as other Construct tables</span></li>
+<li><span style="line-height: 1.5;">a field with a name </span><span style="line-height: 1.5;"><span class="docsCode">id</span> and auto increment attribute switched on. Set <span class="docsCode">idField</span> attribute if your auto-increment field is called differently.</span></li>
+</ul></div>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p><span class="docsDescription">Common Grid options</span></p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: php,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">&lt;?php
+
+namespace Plugin\MyPlugin;
+
+
+class AdminController
+{
+
+    public function index()
+    {
+        $config = array(
+            &#039;title&#039; =&gt; &#039;MyPlugin&#039;,
+            &#039;table&#039; =&gt; &#039;my_plugin&#039;,
+            &#039;sortField&#039; =&gt; &#039;personOrder&#039;,
+            &#039;createPosition&#039; =&gt; &#039;top&#039;,
+            &#039;pageSize&#039; =&gt; 5,
+            &#039;fields&#039; =&gt; array(
+                array(
+                    &#039;label&#039; =&gt; &#039;Name&#039;,
+                    &#039;field&#039; =&gt; &#039;name&#039;,
+                ),
+                array(
+                    &#039;type&#039; =&gt; &#039;Select&#039;,
+                    &#039;label&#039; =&gt; &#039;Age&#039;,
+                    &#039;field&#039; =&gt; &#039;age&#039;,
+                    &#039;values&#039; =&gt; array(
+                        array(&#039;young&#039;, &#039;Young&#039;),
+                        array(&#039;old&#039;, &#039;Old&#039;)
+                    )
+                ),
+                array(
+                    &#039;type&#039; =&gt; &#039;Checkbox&#039;,
+                    &#039;label&#039; =&gt; &#039;In love&#039;,
+                    &#039;preview&#039; =&gt; true,
+                    &#039;field&#039; =&gt; &#039;inLove&#039;
+                ),
+                array(
+                    &#039;type&#039; =&gt; &#039;RepositoryFile&#039;,
+                    &#039;label&#039; =&gt; &#039;CV&#039;,
+                    &#039;preview&#039; =&gt; true,
+                    &#039;field&#039; =&gt; &#039;cv&#039;
+                )
+            )
+        );
+        return crud($config);
+    }
+}
+</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Full Grid options list    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <table class="ipTableManagement">
+<tbody>
+<tr>
+<td>Grid option</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>actions</td>
+<td>
+<p>Array of actions buttons to be added at the top of the grid. Eg.</p>
+<p></p>
+<p>'actions' =&gt; array(<br />    array(<br />        'label' =&gt; 'Button text',<br />        'class' =&gt; 'someClassToBeAddedToTheButton',</p>
+<p>        'data' =&gt; 'any data to be available for jQuery'<br />    )<br />)</p>
+<p></p>
+<p>since 4.5.0 you can add <span class="docsCode">Select</span> and custom <span class="docsCode">Html</span> too:</p>
+<p></p>
+<p><span>'actions' = </span><span>array</span><span>(</span></p>
+<p><span>    array(<br /></span><span></span><span>        'type' </span><span>=&gt; </span><span>'Select'</span><span>,</span></p>
+<p><span>        'class' =&gt; 'someClassToBeAddedToTheSelect',<br /></span><span></span><span>        'label' </span><span>=&gt; 'Someting meaninful'</span><span>,<br /></span><span></span><span>        'values' </span><span>=&gt; array(array('label' =&gt; 'A', 'value' =&gt; '1'), ...)</span><span>,<br /></span><span></span><span>        'itemClass' </span><span>=&gt; 'classNameToAddToEachSelectItem</span><span>'</span></p>
+<p><span>    ),</span></p>
+<p><span>    array (</span></p>
+<p><span>         'type' =&gt; 'Html',</span></p>
+<p><span>        'html' =&gt; '&lt;div&gt;Your custom HTML&lt;/div&gt;'</span></p>
+<p><span>    )<br /></span><span>);</span></p>
+</td>
+</tr>
+<tr>
+<td>actionsFilter</td>
+<td>
+<p><span>Function to filter action buttons array. The difference to 'actions' setting is that this method allows not only to add new buttons, but also remove them or swap the order. Available since 4.5.0.</span></p>
+<p><span></span></p>
+<p><span>'actionsFilter' </span><span>=&gt; </span><span>function </span><span>(</span><span>$actions</span><span>) {<br /></span><span></span><span>    unset</span><span>(</span><span>$actions</span><span>[</span><span>'add'</span><span>]);<br /></span><span></span><span>    return </span><span>$actions</span><span>;<br /></span><span>},<br /></span></p>
+</td>
+</tr>
+<tr>
+<td>afterCreate</td>
+<td>PHP callable. Eg. function($id, $postData){ ... }<span></span></td>
+</tr>
+<tr>
+<td>afterDelete</td>
+<td>PHP callable. Eg. function($id){ ... }<span></span></td>
+</tr>
+<tr>
+<td>afterMove</td>
+<td>PHP callable. Eg. function($id){ ... }</td>
+</tr>
+<tr>
+<td>afterUpdate</td>
+<td>PHP callable. Eg. function($id, $postData){ ... }<span></span></td>
+</tr>
+<tr>
+<td>allowCreate</td>
+<td>If set to false, does not allow creating new grid records.<span></span></td>
+</tr>
+<tr>
+<td>allowDelete</td>
+<td>If set to false, does not allow to delete grid records.<span></span></td>
+</tr>
+<tr>
+<td>allowSearch</td>
+<td>If set to false, removes grid search functionality.<span></span></td>
+</tr>
+<tr>
+<td>allowSort</td>
+<td>If set to false, does not allow to sort records<span></span></td>
+</tr>
+<tr>
+<td>allowUpdate</td>
+<td>If set to false, does not allow updating grid records.<span></span></td>
+</tr>
+<tr>
+<td>beforeCreate</td>
+<td>PHP callable. Eg. function($postData){ ... }<span></span></td>
+</tr>
+<tr>
+<td>beforeDelete</td>
+<td>PHP callable. Eg. function($id){ ... }<span></span></td>
+</tr>
+<tr>
+<td>beforeMove</td>
+<td>PHP callable. Eg. function($id){ ... }</td>
+</tr>
+<tr>
+<td>beforeUpdate</td>
+<td>PHP callable. Eg. function($id, $postData){ ... }<span></span></td>
+</tr>
+<tr>
+<td>breadcrumbField</td>
+<td>Database field value that has to be used in breadcrumb. Meaningful only in nested grid. If ommited, GRID's <span class="docsCode">title</span> option is used. Available since 4.2.4<span></span></td>
+</tr>
+<tr>
+<td>createFilter</td>
+<td>PHP callable to filter data before inserting new record. (Available since 4.2.1. Callable e.g. function($data) { ... }<span></span></td>
+</tr>
+<tr>
+<td><span>createFormFilter</span></td>
+<td><span>PHP callable to filter update form object. Callable e.g.</span><span> </span><span>function </span><span>(\Construct\Form </span><span>$form</span><span>) { ... </span><span>}. Available since 4.4.1.</span></td>
+</tr>
+<tr>
+<td>createPosition</td>
+<td>Position for newly added records can be either top or bottom. By default, new records are displayed on the top of the list. <span></span></td>
+</tr>
+<tr>
+<td>deleteWarning</td>
+<td>Message to be displayed when deleting grid's record.</td>
+</tr>
+<tr>
+<td>fields</td>
+<td>Fields that have to be listed in admin. See below for more detailed description.<span></span></td>
+</tr>
+<tr>
+<td>filter</td>
+<td>SQL where clause surrounded by brackets. Eg. " (`score` &gt; 25) "<span></span></td>
+</tr>
+<tr>
+<td>gatewayData</td>
+<td>associative array of GET data to be passed to the controller on each GRID operation. Useful if you want to alter GRID's config depending on GET params.<span></span></td>
+</tr>
+<tr>
+<td>layout</td>
+<td>E.g. 'Plugin/xxx/view/customLayout.php'. See Construct\Internal\Grid\view\layout.php for example layout.<span></span></td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>Number of items per single page.<span></span></td>
+</tr>
+<tr>
+<td>selectFields</td>
+<td>SQL query string defining fields to be selected. If ommited, GRID uses '*' to select all fields in the table. Available since 4.0.17<span></span></td>
+</tr>
+<tr>
+<td>sortField</td>
+<td>Name of dedicated field used for record sorting. In SQL table, this field should have a <span>DOUBLE</span> data type.<span></span></td>
+</tr>
+<tr>
+<td>sortDirection</td>
+<td>'asc' by default. Set to 'desc' to invert the order.</td>
+</tr>
+<tr>
+<td>table</td>
+<td>Grid table name in SQL database (without a prefix). This is a required parameter.<span></span></td>
+</tr>
+<tr>
+<td>title</td>
+<td>Grid title displayed on the top of grid's page.<span></span></td>
+</tr>
+<tr>
+<td><span>updateFilter</span></td>
+<td>PHP callable to filter data before updating the database. (Available since 4.0.17). Callable eg. function($id, $data)</td>
+</tr>
+<tr>
+<td><span>updateFormFilter</span></td>
+<td><span>PHP callable to filter update form object. Callable e.g.</span><span> </span><span>function </span><span>(\Construct\Form </span><span>$form</span><span>) { ... </span><span>}. Available since 4.4.1.</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Each field specific options    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>By default, if the <span class="docsCode">fields</span> key is not set, the grid displays records from all SQL table columns as text strings. You can manually control fields that have to be available in management by providing array of fields. Each array item may have following options:</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <table class="ipTableManagement">
+<tbody>
+<tr>
+<td>Grid field option</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>allowCreate</td>
+<td><span>Set to <span class="docsCode">false</span> to disable the field in create form. (since 4.0.17)</span></td>
+</tr>
+<tr>
+<td>allowOrder</td>
+<td><span>Allow records to be ordered by this field (since 4.4.0)</span></td>
+</tr>
+<tr>
+<td>allowUpdate</td>
+<td><span>Set to <span class="docsCode">false</span> to</span><span> </span><span><span><span><span>disable the field</span><span> </span>in</span><span> </span>update</span><span> </span>form. (since 4.0.17)</span></td>
+</tr>
+<tr>
+<td>attributes</td>
+<td><span>assocative array of keys/values to be added to the inputs HTML tag</span></td>
+</tr>
+<tr>
+<td>defaultValue</td>
+<td>Default value that has to be assigned to the field when creating a new record.</td>
+</tr>
+<tr>
+<td>field</td>
+<td>Database column name.</td>
+</tr>
+<tr>
+<td>fileLimit</td>
+<td>Available only in RepositoryFile field. Default value 1. Set <span>null</span> to upload an unlimited number of files. (since 4.0.17)</td>
+</tr>
+<tr>
+<td>hint</td>
+<td>Shows a hint when a user hovers the field with a mouse.</td>
+</tr>
+<tr>
+<td>ignoreDb</td>
+<td>Don't write data of this field to the database. Basically, that means the field won't work unless you will handle writing the value to the database on your own by catching <span class="docsCode">afterInsert</span>, <span class="docsCode">afterUpdate</span>, etc. settings. (since 4.6.3)</td>
+</tr>
+<tr>
+<td>label</td>
+<td>Field's label.</td>
+</tr>
+<tr>
+<td><a href="grid-multilingual.html">multilingual</a></td>
+<td>Set field to be multilingual (1) or not (0). Defaults to 0.</td>
+</tr>
+<tr>
+<td>layout</td>
+<td>
+<p>Field layout. Available options:<br /><br /></p>
+<ul>
+<li><span style="line-height: normal;"><span>\</span><span>Construct\Form\Field::</span><span>LAYOUT_DEFAULT</span></span></li>
+<li><span style="line-height: normal;"><span>\<span>Construct\Form\Field::</span><span>LAYOUT_BLANK</span></span></span></li>
+<li><span>\</span><span>Construct\Form\Field::</span><span>LAYOUT_NO_LABEL</span></li>
+</ul>
+<p>(since 4.3.0)</p>
+</td>
+</tr>
+<tr>
+<td>note</td>
+<td>Shows a note below the field. </td>
+</tr>
+<tr>
+<td>preview</td>
+<td>
+<p><span>Method to display field's data in record list. By default just puts the value from the database as it is. You can set any PHP callable or string to modify preview in a way you like. See the file <span class="docsCode">Construct\Internal\Email\AdminController.php</span> for sample usage. </span></p>
+<p><span>If you like to exclude the field from listing in records list, set <span class="docsCode">false</span>. If you want your own function to generate the preview, set it in this way</span></p>
+<p><span>'preview' =&gt; function($fieldValue, $dbRecord){ return 'xxx'; }</span></p>
+</td>
+</tr>
+<tr>
+<td>type</td>
+<td>
+<p><span style="line-height: 20px;">Field type. See below for available field types. The default field type is Text. You can introduce <a href="custom-grid-field-example.html" target="_blank">your own field types</a>. In that case, provide the full class name as a string.</span></p>
+</td>
+</tr>
+<tr>
+<td>transformations</td>
+<td>
+<p><span style="line-height: 20px;">An array of transformations to be applied to the user entered the value before storing to the database. Eg. <span>array('Trim', 'UpperCase')</span><span>. List of available default transformations: <span>LowerCase</span>, <span>Trim</span>, <span>UpperCase</span>, <span>UpperCaseFirst, NullIfEmpty</span>. You can create your own transformations by implement <span>\Construct\Internal\Grid\Model\Transformation</span> interface. After doing so, use the full class name including namespace in transformations array.</span></span></p>
+</td>
+</tr>
+<tr>
+<td>values</td>
+<td>
+<p></p>
+<p>Available only in Select field. Usage example below:</p>
+<p></p>
+<p><span class="docsCode">'values' =&gt; array(<br />    array('young', 'Young'),<br />    array('old', 'Old')<br />)</span></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>validators</td>
+<td><span style="line-height: normal;">An array of validators. See data validation section below.</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Field types    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <ul>
+<li><span style="line-height: 1.5;">Checkbox</span></li>
+<li><span style="line-height: 1.5;">Checkboxes</span></li>
+<li>Color</li>
+<li><span style="line-height: 1.5;">Currency</span></li>
+<li><span style="line-height: 1.5;">Grid (since 4.1.3)</span></li>
+<li><span style="line-height: 1.5;">Info (since 4.3.0)</span></li>
+<li><span style="line-height: 1.5;">Integer</span></li>
+<li>Radio (since 4.2.3)</li>
+<li><span style="line-height: 1.5;">RepositoryFile</span></li>
+<li><span style="line-height: 1.5;">RichText</span></li>
+<li><span style="line-height: 1.5;">Select</span></li>
+<li>Text</li>
+<li><span style="line-height: 1.5;">Textarea </span></li>
+<li><span style="line-height: 1.5;">Url (since 4.2.6)</span></li>
+</ul>
+<p><span style="line-height: 1.5;">You can extend <span>\</span><span>Construct\Internal\Grid\Model\</span><span>Field class and <a href="custom-grid-field-example.html">create your own type</a>. Add full class name as a string to the 'type' option to use your own class.</span></span></p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: php,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">&lt;?php
+
+namespace Plugin\MyPlugin;
+
+
+class AdminController
+{
+
+    public function index()
+    {
+        $config = array(
+            &#039;table&#039; =&gt; &#039;my_plugin&#039;,
+            &#039;fields&#039; =&gt; array(
+                array(
+                    &#039;type&#039; =&gt; &#039;Plugin\MyPlugin\CustomGridFieldClass&#039;,
+                    &#039;label&#039; =&gt; &#039;xxx&#039;,
+                    &#039;field&#039; =&gt; &#039;xxx&#039;
+                ),
+            )
+        )
+        return crud($config);
+    }
+}
+
+</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Data validation    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>Grid data can be automatically validated. See <a href="validators.html">validators page</a> for a list of default validators, provided with Construct.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>You can add any number of validators to a field. The sample below adds three validators: the first validator makes the field required, the second one verifies the field against regular expression, and the third validator verifies that the field's value does not belong to an array.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: php,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">&#039;validators&#039; =&gt; array(
+    &#039;Required&#039;,
+    array(&#039;Regex&#039;, &#039;/^([^\/\\\])+$/&#039;, &#039;You can\&#039;t use slash in URL.&#039;),
+    array(&#039;NotInArray&#039;, $languageUrls, &#039;Already taken&#039;),
+)</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p><span>If needed, you can create your own custom validator.</span></p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title" id="tabs">
+            Tabs (since 4.1.3)    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>Very large tables are not easy to edit in one long form. Construct GRID supports tabs to slice huge records into portions.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Image ipSkin-default"
+        >
+        <a
+                    rel="lightbox"
+            href="https://www.impresspages.org/file/2014/08/01/impresspages_grid_tabs_1.png"
+                        title=""
+        data-description=""
+        >
+        <img class="ipsImage" src="../file/2014/08/13/impresspages_grid_tabs.png" alt="" title="" />
+    </a>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>Example GRID configuration with tabs </p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: php,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">&lt;?php
+
+
+namespace Plugin\MyPlugin;
+
+
+class AdminController
+{
+
+    public function index()
+    {
+        $config = array(
+            &#039;title&#039; =&gt; &#039;Person list&#039;,
+            &#039;table&#039; =&gt; &#039;gridExample&#039;,
+            &#039;fields&#039; =&gt; array(
+                array(
+                    &#039;label&#039; =&gt; &#039;Tab1&#039;,
+                    &#039;type&#039; =&gt; &#039;Tab&#039;
+                ),
+                array(
+                    &#039;label&#039; =&gt; &#039;First name&#039;,
+                    &#039;field&#039; =&gt; &#039;FirstName&#039;,
+                    &#039;validators&#039; =&gt; array(&#039;Required&#039;)
+                ),
+                array(
+                    &#039;label&#039; =&gt; &#039;Last name&#039;,
+                    &#039;field&#039; =&gt; &#039;LastName&#039;
+                ),
+                array(
+                    &#039;type&#039; =&gt; &#039;Select&#039;,
+                    &#039;label&#039; =&gt; &#039;Sex&#039;,
+                    &#039;field&#039; =&gt; &#039;Sex&#039;,
+                    &#039;values&#039; =&gt; array(
+                        array(&#039;female&#039;, &#039;Female&#039;),
+                        array(&#039;male&#039;, &#039;Male&#039;)
+                    )
+                ),
+                array(
+                    &#039;label&#039; =&gt; &#039;Tab2&#039;,
+                    &#039;type&#039; =&gt; &#039;Tab&#039;
+                ),
+                array(
+                    &#039;label&#039; =&gt; &#039;Phone&#039;,
+                    &#039;field&#039; =&gt; &#039;Phone&#039;,
+                )
+                //...
+            )
+        );
+        return crud($config);
+    }
+}
+</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title" id="nested">
+            Nested GRID (subGRID) (since 2.1.3)    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p> Nested grid allows to manage records in multiple tables. Eg. below shows how to create GRID configuration which gives the management of persons and unlimited photo records for each of them.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: php,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">&lt;?php
+
+
+namespace Plugin\MyPlugin;
+
+
+class AdminController
+{
+    public  function index()
+    {
+        $config = array(
+            &#039;title&#039; =&gt; &#039;Person list&#039;,
+            &#039;table&#039; =&gt; &#039;person&#039;,
+            &#039;fields&#039; =&gt; array(
+                array(
+                    &#039;label&#039; =&gt; &#039;First name&#039;,
+                    &#039;field&#039; =&gt; &#039;FirstName&#039;
+                ),
+                array(
+                    &#039;label&#039; =&gt; &#039;Last name&#039;,
+                    &#039;field&#039; =&gt; &#039;LastName&#039;
+                ),
+                array(
+                    &#039;label&#039; =&gt; &#039;Photos&#039;,
+                    &#039;type&#039; =&gt; &#039;Grid&#039;,
+                    &#039;field&#039; =&gt; &#039;personId&#039;,
+                    &#039;config&#039; =&gt; array(
+                        &#039;title&#039; =&gt; &#039;Photos&#039;,
+                        &#039;connectionField&#039; =&gt; &#039;personId&#039;,
+                        &#039;table&#039; =&gt; &#039;person_photo&#039;,
+                        &#039;fields&#039; =&gt; array(
+                            array(
+                                &#039;label&#039; =&gt; &#039;Title&#039;,
+                                &#039;field&#039; =&gt; &#039;title&#039;
+                            ),
+                            array(
+                                &#039;label&#039; =&gt; &#039;Image&#039;,
+                                &#039;field&#039; =&gt; &#039;image&#039;,
+                                &#039;type&#039; =&gt; &#039;RepositoryFile&#039;
+
+                            )
+                        )
+                    )
+                )
+            )
+        );
+        return crud($config);
+    }
+
+}
+</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>The nesting is achieved by adding a field of type "Grid". This type of field has it's own 'config' option where you put the same options as in root level grid config. There is just one additional setting - <span class="docsCode">connectionField</span> . This tells the system which field does the connection between the tables. Here is the database structure needed for example to work:</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: sql,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">CREATE TABLE IF NOT EXISTS `ip_person` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `FirstName` varchar(255) DEFAULT NULL,
+  `LastName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `ip_person_photo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `personId` int(11) NOT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `image` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title" id="recursive">
+            Recursive nesting (since 4.1.3)    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>You can make your GRID recursive. In this way mimic something like directory tree. Example configuration of recursive node tree holding a title for each node. </p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: js,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">&lt;?php
+
+namespace Plugin\MyPlugin;
+
+
+class AdminController
+{
+    public  function index()
+    {
+
+        //GRID config for a single node
+        $recursiveConfig = array(
+            &#039;title&#039; =&gt; &#039;Nodes&#039;,
+            &#039;table&#039; =&gt; &#039;node&#039;,
+            &#039;connectionField&#039; =&gt; &#039;parentId&#039;,
+            &#039;fields&#039; =&gt; array(
+                array(
+                    &#039;label&#039; =&gt; &#039;Title&#039;,
+                    &#039;field&#039; =&gt; &#039;title&#039;
+                ),
+                array(
+                    &#039;label&#039; =&gt; &#039;Subnodes&#039;,
+                    &#039;type&#039; =&gt; &#039;Grid&#039;,
+                    &#039;connectionField&#039; =&gt; &#039;parentId&#039;
+                    //config of a subgrid field will be added below with recursion to itself
+                )
+            )
+        );
+        //make GRID config recursive
+        $recursiveConfig[&#039;fields&#039;][1][&#039;config&#039;] = &amp;$recursiveConfig;
+
+        //root node GRID config. The difference from above is just the filter &#039;`parentId` = 0&#039; and the title
+        $rootConfig =  array(
+            &#039;title&#039; =&gt; &#039;Tree&#039;,
+            &#039;table&#039; =&gt; &#039;node&#039;,
+            &#039;filter&#039; =&gt; &#039;`parentId` = 0&#039;,
+            &#039;fields&#039; =&gt; array(
+                array(
+                    &#039;label&#039; =&gt; &#039;Title&#039;,
+                    &#039;field&#039; =&gt; &#039;title&#039;
+                ),
+                array(
+                    &#039;label&#039; =&gt; &#039;Subnodes&#039;,
+                    &#039;type&#039; =&gt; &#039;Grid&#039;,
+                    &#039;config&#039; =&gt; $recursiveConfig
+                )
+            )
+        );
+
+        return crud($rootConfig);
+    }
+
+}
+</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>Database table required for this example to work </p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: sql,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">CREATE TABLE IF NOT EXISTS `ip_node` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `parentId` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title" id="javascript">
+            JavaScript events    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>Grid triggers following JavaScript events </p></div>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <table class="ipTableManagement">
+<tbody>
+<tr>
+<td>Event</td>
+<td>Comment</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>init.ipGrid</td>
+<td>Grid has been initialized</td>
+<td>--</td>
+</tr>
+<tr>
+<td>afterRecordDeleted.ipGrid</td>
+<td>since 4.2.8</td>
+<td>id</td>
+</tr>
+<tr>
+<td>beforeRecordDeleted.ipGrid</td>
+<td>since 4.2.8</td>
+<td>id</td>
+</tr>
+<tr>
+<td>createModalOpen.ipGrid</td>
+<td>since 4.2.8</td>
+<td>$modal</td>
+</tr>
+<tr>
+<td><span>htmlChanged.ipGrid</span></td>
+<td>user has taken some action that lead to refresh of the whole HTML</td>
+<td>--</td>
+</tr>
+<tr>
+<td>searchModalOpen.ipGrid</td>
+<td>since 4.2.8</td>
+<td>$modal</td>
+</tr>
+<tr>
+<td>updateModalOpen.ipGrid</td>
+<td>since 4.2.8</td>
+<td>$modl</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>If you need to execute your own JavaScript on GRID initialization <span class="docsDanger">default jQuery on ready event won't work</span>, because GRID loads content dynamically. You have to catch one of following events: <span><span class="docsCode">htmlChanged.ipGrid</span> or <span class="docsCode">init.ipGrid</span></span> to execute your own JS on GRID's content.  These events appear almost at the same time. There is just GRID's JavaScript initialization in between. </p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: js,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">$(&#039;.ipsGrid&#039;).on(&#039;init.ipGrid&#039;, function () {
+    alert(&#039;Your code goes here&#039;);
+});
+</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Grid methods    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>GRID is written as a jQuery plugin and has just one <span class="docsCode">refresh</span> method at the moment. If you add your own JavaScript that removes / adds / modifies the data in the database using AJAX, you can use this method to refresh the GRID afterwards.</p></div>
+</div>
+<div
+    class="ipWidget ipWidget-CodeHighlight ipSkin-default"
+        >
+    <pre class="brush: js,
+    auto-links: false,
+    toolbar: false,
+    html-script: false,    gutter: false">$(&#039;.ipsGrid&#039;).ipGrid(&#039;refresh&#039;);</pre>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h3 class="_title">
+            See also    </h3>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <ul>
+<li><a href="admin-grid-example.html">Grid example</a></li>
+<li><a style="line-height: 1.5;" href="validators.html">Data validator</a></li>
+</ul></div>
+</div>
+</div>
+        <div
+    class="ipWidget ipWidget-Divider ipSkin-default"
+        >
+    </div>
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'impresspages'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    <div class="side col_12 col_md_12 col_lg_3 pull-left">
+        <aside>
+            <div id="ipBlock-side1" data-revisionid='0' data-languageid='1' class="ipBlock"></div>
+        </aside>
+    </div>
+</div>
+
+<footer>
+    <div class="social separator">
+        <div class="wrapper">
+            <div class="col_12">
+                <a href="https://www.impresspages.org/download" class="btn btn-primary pull-right">Download</a>
+                <a href="http://twitter.com/impresspages" class="icon twitter" target="_blank"><span class="sr-only">Follow us on Twitter</span></a>
+                <a href="http://www.facebook.com/Construct" class="icon facebook" target="_blank"><span class="sr-only">Join us on Facebook</span></a>
+                <a href="http://www.youtube.com/user/impresspages" class="icon youtube" target="_blank"><span class="sr-only">YouTube</span></a>
+                <a href="https://www.impresspages.org/rss" class="icon rss" target="_blank"><span class="sr-only">Subscribe to our RSS feed</span></a>
+                <a href="https://github.com/impresspages/Construct" class="icon github" target="_blank"><span class="sr-only">Fork us on GitHub</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="copy separator">
+        <div class="wrapper">
+            <div class="col_12">
+                <a class="logo" href="https://www.impresspages.org/"><img src="../Theme/Construct/assets/img/impresspages_logo_small.png" alt="Construct"></a>
+                <p  class="text">Open source since 2009 <br />Building a better Web.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+var ip = {"baseUrl":"https:\/\/www.impresspages.org\/","safeMode":false,"languageId":1,"languageUrl":"https:\/\/www.impresspages.org\/","languageCode":"en","languageTextDirection":"ltr","theme":"Construct","pageId":"218","revisionId":"4261","securityToken":"4738d227c6bf2c69ef257bb1d1a248d1","developmentEnvironment":false,"debugMode":false,"isManagementState":false,"isAdminState":0,"isAdminNavbarDisabled":0,"gmapsApiKey":""};
+    var ipSessionRefresh = 1420;
+    var ipValidatorTranslations = {"Ip-admin":{"*":"Please correct this value",":email":"Please enter a valid email address",":number":"Please enter a valid numeric value",":url":"Please enter a valid URL","[max]":"Please enter a value no larger than $1","[min]":"Please enter a value of at least $1","[required]":"Please complete this mandatory field"},"en":{"*":"Please correct this value",":email":"Please enter a valid email address",":number":"Please enter a valid numeric value",":url":"Please enter a valid URL","[max]":"Please enter a value no larger than $1","[min]":"Please enter a value of at least $1","[required]":"Please complete this mandatory field"}};
+    var ipUrlOverrides = [];
+</script>
+  <script type="text/javascript" src="../Ip/Internal/Core/assets/ipCore.min.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shCore.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushCss.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushDiff.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushJScript.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushPhp.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushPlain.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushSass.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushSql.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushXml.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/highlight.js@42"></script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-848680-25', '.impresspages.org');
+    ga('send', 'pageview');
+
+</script>  <script type="text/javascript" src="../Plugin/Colorbox/assets/colorbox/jquery.colorbox-min.js@42"></script>
+  <script type="text/javascript" src="../Plugin/Colorbox/assets/colorboxInit.js@42"></script>
+  <script type="text/javascript">
+
+  (function() {
+    var cx = '009443016237745017729:eanfkdtpbvg';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+
+</script>  <script type="text/javascript" src="../Plugin/User/assets/user.js@42"></script>
+  <script type="text/javascript" src="../Plugin/HybridAuth/assets/hybridauth.js@42"></script>
+  <script type="text/javascript" src="../Plugin/PayPalSubscription/assets/paypalSubscription.js@42"></script>
+  <script type="text/javascript" src="../Plugin/Support/assets/support.js@42"></script>
+  <script type="text/javascript" src="../Theme/Construct/assets/js/site.js@42"></script>
+
+</body>
+</html>

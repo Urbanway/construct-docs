@@ -1,0 +1,20 @@
+
+$( document ).ready(function() {
+
+    $('.ipsSupportSubscribe').on('click', function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: ip.baseUrl,
+            data: {'sa' : 'Support.subscribe', 'securityToken' : ip.securityToken},
+            type: 'POST',
+            success: function (response) {
+                window.location = response.redirectUrl;
+            },
+            error: function (response) {
+                console.log(response);
+                window.location = window.location.href.split('#')[0];
+            }
+        });
+    });
+});
+

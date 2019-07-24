@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="en">
+<head>
+                <meta charset="UTF-8" />
+    <title>Installation</title>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="generator" content="Construct" />
+    <link href="../Plugin/CodeHighlight/assets/syntaxhighlighter/css/shCoreDefault.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/CodeHighlight/assets/shThemeConstruct.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/Colorbox/assets/theme2/colorbox.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/User/assets/user.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/HybridAuth/assets/hybridauth.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Plugin/Support/assets/notSubscribedView.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Theme/Construct/assets/docs.css@42.css" rel="stylesheet" type="text/css" />
+    <link href="../Theme/Construct/assets/overrides.css@42.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <div class="navbar navbar-static-top navbar-inverse" style="z-index: 1001;">         <div class="wrapper">
+            <div class="col_12">
+                <a href="https://www.impresspages.org/" class="navbar-brand icon"></a>
+                                    <div class="search navbar-right">
+                        <a href="https://www.impresspages.org/search" class="toggle pull-right">&nbsp;</a>
+                    </div>
+                                <a class="btn btn-primary navbar-btn navbar-right" href="https://www.impresspages.org/download">Download</a>
+                                    <a class="btn btn-default navbar-btn navbar-right navbar-login" href="https://www.impresspages.org/login">Login</a>
+                
+                <ul class="level1 nav navbar-nav navbar-left">        <li>
+            <a href="https://market.impresspages.org" title="Market">
+                Market            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/blog2" title="Blog">
+                Blog            </a>
+                    </li>        <li class="crumb">
+            <a href="https://www.impresspages.org/docs" title="Docs">
+                Docs            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/community" title="Community">
+                Community            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/support" title="Support">
+                Support            </a>
+                    </li>        <li>
+            <a href="http://www.impresspages.org/about-us" title="About">
+                About            </a>
+                    </li></ul>
+            </div>
+        </div>
+    </div>
+            <div class="navbar  navbar-static-top navbar-default">
+            <div class="wrapper">
+                <div class="col_12">
+                    <ul class="level1 nav navbar-nav">        <li>
+            <a href="thinking-in-impresspages.html" title="Manual">
+                Manual            </a>
+                    </li>        <li>
+            <a href="hello-world-plugin.html" title="Examples">
+                Examples            </a>
+                    </li>        <li>
+            <a href="cdn.html" title="Tips">
+                Tips            </a>
+                    </li>        <li class="crumb">
+            <a href="installation.html" title="User manual">
+                User manual            </a>
+                    </li></ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="wrapper">
+    <div class="split col_lg_3 visible-md visible-lg"></div>
+    <div class="sidenav col_12 col_md_12 col_lg_3 pull-left">
+        <span class="sidenavHeader">Topics</span>
+        <nav class="collapsable ">
+                            <ul class="level1 ">        <li>
+            <a href="https://www.impresspages.org/widget-management" title="Widget management">
+                Widget management            </a>
+                    </li>        <li class="active">
+            <a href="installation.html" title="Installation">
+                Installation            </a>
+                    </li>        <li>
+            <a href="update.html" title="Update">
+                Update            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/plugin-install" title="Plugin install">
+                Plugin install            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/plugin-update" title="Plugin update">
+                Plugin update            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/theme-install" title="Theme install">
+                Theme install            </a>
+                    </li>        <li>
+            <a href="https://www.impresspages.org/theme-update" title="Theme update">
+                Theme update            </a>
+                    </li></ul>
+            
+            <a href="installation.html#" class="toggle"></a>
+        </nav>
+    </div>
+    <div class="main col_12 col_md_12 col_lg_8 pull-right">
+        <div class="breadcrumb">
+            <ol class="breadcrumb">
+    <li><a href="https://www.impresspages.org/">Home</a></li>
+            <li><a href="https://www.impresspages.org/docs" title="Docs">Docs</a></li>
+                <li><a href="https://www.impresspages.org/user-manual" title="User manual">User manual</a></li>
+                <li class="active">Installation</li>
+    </ol>
+        </div>
+        <div id="ipBlock-main" data-revisionid='4256' data-languageid='0' class="ipBlock"><div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h1 class="_title">
+            Installing Construct    </h1>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Requirements    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p><span style="line-height: 1.5;">To install Construct, you need a basic server with PHP and MySQL. </span></p>
+<p>Detailed requirements:</p>
+<ul>
+<li>Apache server </li>
+<li>Apache "mod_rewrite" module</li>
+<li>Apache "mod_headers" module</li>
+<li>PHP 5.5.0 or newer</li>
+<li>PHP GD library</li>
+<li>PHP mbstring library</li>
+<li>PHP curl library</li>
+<li>PHP PDO library</li>
+<li>MySQL 5 and higher </li>
+<li>30+ MB free disk space</li>
+<li>ini_set function enabled</li>
+</ul></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Recommended    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <ul>
+<li>PHP <span>PECL intl library (better number, currency and date formatting)</span></li>
+</ul></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Installation steps    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <ul>
+<li>Extract the downloaded files to the folder on your server where you want Construct to be installed. Be sure you don't miss <span class="docsCode">.htaccess</span>. Linux hides all the files that starts with dot by default.</li>
+<li><span style="line-height: 1.5;">Then type appropriate URL in your browser. You will see the installation wizard. Follow the instructions until installation completes.</span></li>
+</ul></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Database    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <p>Construct will try to create a database for you if your provided database user has permission to do so.  Most shared host providers don't allow that. In that case please create the database manually on your host management panel. </p>
+<p><span class="docsNoteDanger">It is very important to set <strong>utf8_general_ci</strong> collation on the database. Otherwise you won't be able to use non Latin characters.</span></p>
+<p><span>This is how you can do this using phpMyAdmin:</span></p>
+<ul>
+<li><span style="line-height: 1.5;">log into phpMyAdmin</span></li>
+<li><span style="line-height: 1.5;">select your database from the list on the left</span></li>
+<li><span style="line-height: 1.5;">click on "Operations" from the top set of tabs</span></li>
+<li><span style="line-height: 1.5;">in the <span class="docsUi">Collation</span> box, choose <strong>utf8_general_ci</strong> collation from the dropdown menu</span></li>
+<li><span style="line-height: 1.5;">click <span class="docsUi">go</span>.</span></li>
+</ul></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Installation via Composer    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <ul>
+<li>Add the following code to the <span class="docsCode">composer.json</span> file</li>
+</ul>
+<p><span class="docsCode">{</span><br /><span class="docsCode">  "require": {</span><br /><span class="docsCode">    "impresspages/impresspages": "5.0.*",</span><br /><span class="docsCode">    "impresspages/plugin-google-analytics": "*"</span><br /><span class="docsCode">  },</span><br /><span class="docsCode">  "scripts": {</span><br /><span class="docsCode">    "post-install-cmd": ["php vendor/impresspages/impresspages/bin/setup.php public"],</span><br /><span class="docsCode">    "post-update-cmd": ["php vendor/impresspages/impresspages/bin/setup.php public"]</span><br /><span class="docsCode">  },</span><br /><span class="docsCode">  "autoload": {</span><br /><span class="docsCode">    "psr-4": {"Plugin\\": "public/Plugin/"}</span><br /><span class="docsCode">  }</span><br /><span class="docsCode">}</span></p>
+<p></p>
+<ul>
+<li>Enter the<span> </span><span class="docsCode">composer install</span><span> </span>in the command line</li>
+<li>point your browser to the public directory</li>
+<li>follow the setup wizard</li>
+</ul></div>
+</div>
+<div
+    class="ipWidget ipWidget-Heading ipSkin-default"
+        >
+    <h2 class="_title">
+            Known problems    </h2>
+</div>
+<div
+    class="ipWidget ipWidget-Text ipSkin-default"
+        >
+    <div class="ipsContainer">
+    <ul>
+<li>If installation hangs on database creation step using 127.0.0.1 as database host, try to use localhost instead of ip address. This problem might be caused by your MySQL server configuration. The opposite is possible on EasyPHP, where installation my hang when using <span class="docsCode">localhost</span>.</li>
+</ul></div>
+</div>
+</div>
+        <div
+    class="ipWidget ipWidget-Divider ipSkin-default"
+        >
+    </div>
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'impresspages'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    <div class="side col_12 col_md_12 col_lg_3 pull-left">
+        <aside>
+            <div id="ipBlock-side1" data-revisionid='0' data-languageid='1' class="ipBlock"></div>
+        </aside>
+    </div>
+</div>
+
+<footer>
+    <div class="social separator">
+        <div class="wrapper">
+            <div class="col_12">
+                <a href="https://www.impresspages.org/download" class="btn btn-primary pull-right">Download</a>
+                <a href="http://twitter.com/impresspages" class="icon twitter" target="_blank"><span class="sr-only">Follow us on Twitter</span></a>
+                <a href="http://www.facebook.com/Construct" class="icon facebook" target="_blank"><span class="sr-only">Join us on Facebook</span></a>
+                <a href="http://www.youtube.com/user/impresspages" class="icon youtube" target="_blank"><span class="sr-only">YouTube</span></a>
+                <a href="https://www.impresspages.org/rss" class="icon rss" target="_blank"><span class="sr-only">Subscribe to our RSS feed</span></a>
+                <a href="https://github.com/impresspages/Construct" class="icon github" target="_blank"><span class="sr-only">Fork us on GitHub</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="copy separator">
+        <div class="wrapper">
+            <div class="col_12">
+                <a class="logo" href="https://www.impresspages.org/"><img src="../Theme/Construct/assets/img/impresspages_logo_small.png" alt="Construct"></a>
+                <p  class="text">Open source since 2009 <br />Building a better Web.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+var ip = {"baseUrl":"https:\/\/www.impresspages.org\/","safeMode":false,"languageId":1,"languageUrl":"https:\/\/www.impresspages.org\/","languageCode":"en","languageTextDirection":"ltr","theme":"Construct","pageId":"362","revisionId":"4256","securityToken":"4738d227c6bf2c69ef257bb1d1a248d1","developmentEnvironment":false,"debugMode":false,"isManagementState":false,"isAdminState":0,"isAdminNavbarDisabled":0,"gmapsApiKey":""};
+    var ipSessionRefresh = 1420;
+    var ipValidatorTranslations = {"Ip-admin":{"*":"Please correct this value",":email":"Please enter a valid email address",":number":"Please enter a valid numeric value",":url":"Please enter a valid URL","[max]":"Please enter a value no larger than $1","[min]":"Please enter a value of at least $1","[required]":"Please complete this mandatory field"},"en":{"*":"Please correct this value",":email":"Please enter a valid email address",":number":"Please enter a valid numeric value",":url":"Please enter a valid URL","[max]":"Please enter a value no larger than $1","[min]":"Please enter a value of at least $1","[required]":"Please complete this mandatory field"}};
+    var ipUrlOverrides = [];
+</script>
+  <script type="text/javascript" src="../Ip/Internal/Core/assets/ipCore.min.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shCore.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushCss.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushDiff.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushJScript.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushPhp.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushPlain.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushSass.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushSql.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/syntaxhighlighter/js/shBrushXml.js@42"></script>
+  <script type="text/javascript" src="../Plugin/CodeHighlight/assets/highlight.js@42"></script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-848680-25', '.impresspages.org');
+    ga('send', 'pageview');
+
+</script>  <script type="text/javascript" src="../Plugin/Colorbox/assets/colorbox/jquery.colorbox-min.js@42"></script>
+  <script type="text/javascript" src="../Plugin/Colorbox/assets/colorboxInit.js@42"></script>
+  <script type="text/javascript">
+
+  (function() {
+    var cx = '009443016237745017729:eanfkdtpbvg';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+
+</script>  <script type="text/javascript" src="../Plugin/User/assets/user.js@42"></script>
+  <script type="text/javascript" src="../Plugin/HybridAuth/assets/hybridauth.js@42"></script>
+  <script type="text/javascript" src="../Plugin/PayPalSubscription/assets/paypalSubscription.js@42"></script>
+  <script type="text/javascript" src="../Plugin/Support/assets/support.js@42"></script>
+  <script type="text/javascript" src="../Theme/Construct/assets/js/site.js@42"></script>
+
+</body>
+</html>
